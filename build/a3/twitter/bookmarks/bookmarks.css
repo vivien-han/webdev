@@ -1,0 +1,80 @@
+.wd-left-border {
+  position: relative;
+  left: 16px;
+}
+.wd-title-style {
+  position: relative;
+  top: 12px;
+  color: white;
+  font-size: 20px;
+}
+.wd-image-pos {
+  float: left;
+  position: relative;
+  top: 12px;
+  left: 16px;
+}
+.wd-image {
+  border-radius: 24px;
+  height: 48px;
+  width: 48px;
+}
+
+.wd-name-pos {
+  float: left;
+  position: relative;
+  left: 24px;
+}
+.wd-float {
+  clear: both;
+}
+.wd-name-style {
+  font-size: 15px;
+  color: lightgray;
+}
+.wd-name-style span {
+  color: white;
+}
+.wd-content-style {
+  color: white;
+  width: 506px;
+}
+.wd-image-E {
+  height: 264px;
+  width: 504px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.wd-image-E-pos {
+  float: left;
+  position: relative;
+  top: 12px;
+  left: 72px;
+}
+.wd-content-F {
+  font-size: 15px;
+  color: lightgray;
+  padding: 12px;
+}
+.wd-content-F span {
+  color: white;
+  font-weight: bold;
+}
+.wd-content-F-pos {
+  float: left;
+  position: relative;
+  left: 60px;
+  right: 12px;
+}
+.wd-flex-container {
+  display: flex;
+  align-items: stretch;
+}
+.wd-flex-box {
+  color: lightgray;
+  margin: 10px;
+  padding: 10px;
+}
+.wd-flex-container > .wd-flex-box {
+  flex-basis: 100%;
+}

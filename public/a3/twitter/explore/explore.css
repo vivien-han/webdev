@@ -1,0 +1,60 @@
+
+.wd-pos-left-16 {
+  position: relative;
+  left: 16px;
+}
+.wd-pos-right-16 {
+  position: relative;
+  right: 16px;
+}
+
+.wd-highlighted-border {
+  border-bottom-style: solid;
+  border-width: 6px;
+  border-bottom-color: rgb(29,161,242);
+  height: 20px;
+}
+.wd-other-border {
+  border-style: solid;
+  border-color: black;
+  height: 20px;
+}
+.wd-padded-around {
+  padding: 16px;
+}
+
+.wd-other-link-style {
+  color: rgb(110,118,125);
+}
+.wd-link-fonts {
+  font-size: 15px;
+}
+.wd-float-left {
+  float: left;
+}
+.wd-float-right {
+  float: right;
+  position: relative;
+  right: 16px;
+}
+.wd-float-done {
+  clear: both;
+}
+
+.wd-grid-row {
+  clear: both;
+}
+.wd-topic-color {
+  color: rgb(110,118,125);
+}
+.wd-topic-border {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: rgb(47,51,54);
+}
+
+.wd-image {
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+}
