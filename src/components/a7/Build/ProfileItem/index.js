@@ -37,9 +37,9 @@ const profileItem = (
             <span className="wd-color-gray">@{profile.handle}</span><br/>
             {profile.bio}<br/>
             <span className="wd-color-gray">
-              <a><i className="fa fa-map-marker"> {profile.location} </i>  </a>
-              <a><i className="fa fa-circle"> Born {profile.dateOfBirth} </i>  </a>
-              <a><i className="fa fa-calendar"> Joined {profile.dateJoined} </i>  </a>
+              <i className="fa fa-map-marker"> {profile.location} </i>
+              <i className="fa fa-circle"> Born {profile.dateOfBirth} </i>
+              <i className="fa fa-calendar"> Joined {profile.dateJoined} </i>
             </span><br/>
             <div className="row">
               <div className="col-3">
