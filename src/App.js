@@ -9,6 +9,8 @@ import Build from "./components/a6/Build";
 import Build7 from "./components/a7/Build";
 import ExploreScreen from "./components/a6/Build/ExploreScreen/ExploreScreen";
 import HomeScreen from "./components/a6/Build/HomeScreen/HomeScreen";
+//import ExploreScreen7 from "./components/a7/Build/ExploreScreen/ExploreScreen";
+//import ProfileScreen from "./components/a7/Build/ProfileScreen/ProfileScreen";
 import {BrowserRouter, Route} from "react-router-dom";
 
 
@@ -30,7 +32,7 @@ function App() {
           <Route path={["/a7", "/a7/practice"]} exact={true}>
             <Practice7/>
           </Route>
-          <Route path="/a7/twitter">
+          <Route path="/a7/twitter/home" exact={true}>
             <Build7/>
           </Route>
         </div>
