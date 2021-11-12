@@ -4,10 +4,13 @@ import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import HelloWorld from "./components/a6/HelloWorld";
 import Practice from "./components/a6/Practice";
+import Practice7 from "./components/a7/Practice";
 import Build from "./components/a6/Build";
+import Build7 from "./components/a7/Build";
 import ExploreScreen from "./components/a6/Build/ExploreScreen/ExploreScreen";
 import HomeScreen from "./components/a6/Build/HomeScreen/HomeScreen";
 import {BrowserRouter, Route} from "react-router-dom";
+
 
 function App() {
   return (
@@ -24,6 +27,12 @@ function App() {
           </Route>
           <Route path="/a6/twitter/home" component={HomeScreen}/>
           <Route path="/a6/twitter/explore" component={ExploreScreen}/>
+          <Route path={["/a7", "/a7/practice"]} exact={true}>
+            <Practice7/>
+          </Route>
+          <Route path="/a7/twitter">
+            <Build7/>
+          </Route>
         </div>
       </BrowserRouter>
   );
