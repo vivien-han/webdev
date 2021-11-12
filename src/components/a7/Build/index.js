@@ -3,10 +3,10 @@ import {Route} from "react-router-dom";
 import ExploreScreen from "./ExploreScreen/ExploreScreen";
 import HomeScreen from "./HomeScreen/HomeScreen";
 import ProfileScreen from "./ProfileScreen/ProfileScreen";
-import who from "../../../reducers/who";
+//import who from "../../../reducers/who";
 import tweets from "../../../reducers/tweets";
-import profile from "../../../reducers/profile";
-import {combineReducers, createStore} from "redux";
+//import profile from "../../../reducers/profile";
+import {/*combineReducers,*/ createStore} from "redux";
 import {Provider} from "react-redux";
 
 //const reducer = combineReducers({tweets, who, profile})
