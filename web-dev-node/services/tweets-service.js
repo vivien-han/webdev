@@ -1,10 +1,10 @@
 let tweets = require('../../src/reducers/data/tweets.json');
 
 module.exports = (app) => {
-  const findAllTweets = (req, res) => {
+  const fetchAllTweets = (req, res) => {
     res.json(tweets);
   }
-  app.get('/api/tweets', findAllTweets);
+  app.get('/api/tweets', fetchAllTweets);
 
   const postNewTweet = (req, res) => {
     const newTweet = {
@@ -24,7 +24,7 @@ module.exports = (app) => {
       },
       ...req.body,
     }
-    
+
     tweets = [
         newTweet,
       ...tweets
