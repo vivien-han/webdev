@@ -1,14 +1,14 @@
 import posts from './data/tweets.json';
 
-const initialState = {
-  tweets: posts
-}
-
-const tweets = (state = initialState, action) => {
+const tweets = (state = posts, action) => {
   switch (action.type) {
+    case 'fetch-all-tweets':
+      return(
+        action.tweets
+      )
+
     case 'like-tweet':
-      return ({
-        tweets: state.tweets.map(tweet => {
+      return state.map(tweet => {
           if (tweet._id === action.tweet._id) {
             if (tweet.liked === true) {
               tweet.liked = false;
@@ -21,13 +21,12 @@ const tweets = (state = initialState, action) => {
           } else {
             return tweet;
           }
-        })
-      });
+        });
 
     case 'delete-tweet':
-      return ({
-        tweets: state.tweets.filter(tweet => tweet._id !== action.tweet._id)
-      })
+      return (
+        state.filter(tweet => tweet._id !== action.tweet._id)
+      )
 
     case 'create-tweet':
       const tweet = {
@@ -47,12 +46,10 @@ const tweets = (state = initialState, action) => {
           "likes": 345
         },
       };
-      return ({
-        tweets: [
+      return ([
           tweet,
-          ...state.tweets,
-        ]
-      });
+          ...state,
+        ]);
 
     default:
       return(state);

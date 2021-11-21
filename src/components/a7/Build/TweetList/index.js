@@ -2,10 +2,10 @@ import React from "react";
 import {useSelector} from "react-redux";
 import TweetListItem from "./TweetListItem";
 
-const selectAllTweets = (state) => state.tweets;
+//const selectAllTweets = (state) => state.tweets;
 
 const TweetList = () => {
-  const tweets = useSelector(selectAllTweets);
+  const tweets = useSelector((state)=>state.tweets);
   return(
       <ul className="list-group">
         {

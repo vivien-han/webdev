@@ -5,12 +5,12 @@ import './vendors/fontawesome/css/all.min.css';
 import HelloWorld from "./components/a6/HelloWorld";
 import Practice from "./components/a6/Practice";
 import Practice7 from "./components/a7/Practice";
+import Practice8 from "./components/a8/Practice";
 import Build from "./components/a6/Build";
 import Build7 from "./components/a7/Build";
+import Build8 from "./components/a8/Build";
 import ExploreScreen from "./components/a6/Build/ExploreScreen/ExploreScreen";
 import HomeScreen from "./components/a6/Build/HomeScreen/HomeScreen";
-//import ExploreScreen7 from "./components/a7/Build/ExploreScreen/ExploreScreen";
-//import ProfileScreen from "./components/a7/Build/ProfileScreen/ProfileScreen";
 import {BrowserRouter, Route} from "react-router-dom";
 
 
@@ -29,11 +29,19 @@ function App() {
           </Route>
           <Route path="/a6/twitter/home" component={HomeScreen}/>
           <Route path="/a6/twitter/explore" component={ExploreScreen}/>
+
           <Route path={["/a7", "/a7/practice"]} exact={true}>
             <Practice7/>
           </Route>
-          <Route path="/a7/twitter/home" exact={true}>
+          <Route path="/a7/twitter/*" exact={true}>
             <Build7/>
+          </Route>
+
+          <Route path={["/a8", "/a8/practice"]} exact={true}>
+            <Practice8/>
+          </Route>
+          <Route path="/a8/twitter/*" exact={true}>
+            <Build8/>
           </Route>
         </div>
       </BrowserRouter>

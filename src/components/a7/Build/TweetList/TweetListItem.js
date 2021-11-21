@@ -6,7 +6,7 @@ import {useDispatch} from "react-redux";
 const TweetListItem = ({tweet}) => {
   const dispatch = useDispatch();
   const deleteTweetClickHandler = () => {
-    dispatch({type: 'delete-tweet', tweet})
+    dispatch({type: 'delete-tweet', tweet: tweet})
   }
   return(
       <li className="list-group-item">

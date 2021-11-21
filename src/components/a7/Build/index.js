@@ -3,15 +3,15 @@ import {Route} from "react-router-dom";
 import ExploreScreen from "./ExploreScreen/ExploreScreen";
 import HomeScreen from "./HomeScreen/HomeScreen";
 import ProfileScreen from "./ProfileScreen/ProfileScreen";
-//import who from "../../../reducers/who";
+import who from "../../../reducers/who";
 import tweets from "../../../reducers/tweets";
-//import profile from "../../../reducers/profile";
-import {/*combineReducers,*/ createStore} from "redux";
+import profile from "../../../reducers/profile";
+import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 
-//const reducer = combineReducers({tweets, who, profile})
-//const store = createStore(reducer);
-const store = createStore(tweets);
+const reducer = combineReducers({tweets: tweets, who: who, profile: profile})
+const store = createStore(reducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+//const store = createStore(who);
 
 const Build = () => {
   return(

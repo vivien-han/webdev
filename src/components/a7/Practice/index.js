@@ -6,7 +6,7 @@ import ReduxExamples from "./ReduxExamples/components";
 const Practice = () => {
   return(
       <>
-        <h1>Practice</h1>
+        <h1>a7 Practice</h1>
         <Link to="/a7/twitter/home">
           Build
         </Link>
