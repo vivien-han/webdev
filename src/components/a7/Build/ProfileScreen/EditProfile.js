@@ -79,7 +79,7 @@ export const EditProfile = ({content, onSave}) => {
         </div>
 
         <div className="wd-input-border">
-          <div>Location</div>
+          <div>Website</div>
           <textarea
               value={tempProfile.website}
               onChange={(event => {
