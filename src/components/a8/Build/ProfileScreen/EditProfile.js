@@ -1,11 +1,13 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
+import {saveProfile} from "../../../../services/profileService";
 
 export const EditProfile = ({content, onSave}) => {
   let [tempProfile, setTempProfile] = useState(content);
   const dispatch = useDispatch();
   const saveClickHandler = () => {
-    dispatch({type: 'save-profile', save: tempProfile});
+    //dispatch({type: 'save-profile', save: tempProfile});
+    saveProfile(dispatch, tempProfile);
     onSave();
   }
   return(

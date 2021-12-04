@@ -1,15 +1,15 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import NavigationSidebar from "../NavigationSidebar";
 import ProfileItem from "../ProfileItem";
 import EditProfile from "./EditProfile";
-import {useSelector} from "react-redux";
-
-//const selectAllProfile = (state) => state.profile;
+import {useDispatch, useSelector} from "react-redux";
+import {fetchProfile} from "../../../../services/profileService";
 
 
 const ProfileScreen = () => {
-  //const profile = useSelector(selectAllProfile);
   const profile = useSelector(state => state.profile);
+  const dispatch = useDispatch();
+  useEffect(() => fetchProfile(dispatch))
   const [isEdit, setIsEdit] = useState(false);
   return (
       <div className="row mt-2">

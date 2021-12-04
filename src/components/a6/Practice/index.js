@@ -24,6 +24,13 @@ const Practice = () => {
         <Link to="/a8/twitter/home">
           Build
         </Link>
+        <h1>a9</h1>
+        <Link to="/a9/practice">
+          Practice
+        </Link> |
+        <Link to="/a9/twitter/home">
+          Build
+        </Link>
         <h1>a6 Practice</h1>
         <Link to="/a6/hello">
           Hello
